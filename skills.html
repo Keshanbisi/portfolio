@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Skills</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #008080, #20b2aa);
+            color: white;
+            padding: 1.5em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2em;
+        }
+
+        header .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: transform 0.3s ease;
+        }
+
+        header .nav-links a:hover {
+            transform: scale(1.1);
+        }
+
+        .skills-section {
+            padding: 4em 2em;
+            background: white;
+            margin: 3em auto;
+            max-width: 900px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            transform: perspective(1000px) rotateX(1deg);
+            animation: popIn 1.2s ease-out;
+            text-align: center;
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: perspective(1000px) rotateX(-10deg) scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: perspective(1000px) rotateX(1deg) scale(1);
+                opacity: 1;
+            }
+        }
+
+        .skills-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            color: #20b2aa;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-section p {
+            font-size: 1.2em;
+            margin-bottom: 2em;
+            color: #666;
+        }
+
+        .skills-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-section li {
+            font-size: 1.3em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 1em 0;
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            color: #1e002c;
+            padding: 0.8em 1.2em;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skills-section li:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .skills-section a {
+            display: inline-block;
+            margin-top: 2em;
+            text-decoration: none;
+            padding: 1em 2em;
+            background: linear-gradient(135deg, #008B8B, #008B8B);
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skills-section a:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Keshanbisi</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <p>Explore the diverse set of skills I bring to the table, crafted to deliver exceptional results:</p>
+        <ul>
+            <li>GRAPHIC DESIGN</li>
+            <li>INTERACTIVE UI/UX DEVELOPMENT</li>
+            <li>MODERN WEB TECHNOLOGIES</li>
+            <li>CREATIVE BRAND STRATEGY</li>
+            <li>EXPERTISE IN ADOBE (PHOTOSHOP, ILLUSTRATOR)</li>
+        </ul>
+        <a href="index.html">Back to Home</a>
+    </section>
+</body>
+</html>
