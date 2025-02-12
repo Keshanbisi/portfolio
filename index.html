@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Designer Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #008B8B;
+            /* Professional blue */
+            --secondary-color: #ffffff;
+            /* Light grey */
+            --text-color: #333;
+            /* Dark grey for text */
+            --highlight-color: #B22222;
+            /* Accent color (orange) */
+            --white: #F5FFFA;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        header .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5em;
+        }
+
+        header .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        header .nav-links a:hover {
+            color: var(--highlight-color);
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            padding: 3em 2em;
+            background-color: var(--white);
+            color: var(--text-color);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 1em auto;
+            max-width: 1200px;
+        }
+
+        .hero-section .content {
+            max-width: 50%;
+        }
+
+        .hero-section .highlight {
+            color: var(--highlight-color);
+        }
+
+        .typing-effect {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: inline;
+            border-right: 2px solid var(--primary-color);
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .hero-section .buttons {
+            margin-top: 1.5em;
+        }
+
+        .hero-section .btn {
+            text-decoration: none;
+            padding: 0.8em 1.5em;
+            margin-left: 0px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .hero-section .btn:hover {
+            background-color: var(--highlight-color);
+        }
+
+        .hero-section .btn.secondary {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .hero-section .image img {
+            width: 300px;
+            border-radius: 50%;
+            border: 5px solid var(--primary-color);
+            
+        }
+
+        .contact-section {
+            padding: 3em 2em;
+            background-color: var(--white);
+            text-align: center;
+            margin: 2em auto;
+            max-width: 800px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 1em;
+            color: var(--primary-color);
+        }
+
+        .contact-section a {
+            text-decoration: none;
+            padding: 0.8em 1.5em;
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            background-color: var(--highlight-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 1.5em 1em;
+        }
+
+        footer .footer-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            margin: 1em 0;
+        }
+
+        footer .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        footer .footer-links a:hover {
+            color: var(--highlight-color);
+        }
+
+        footer p {
+            margin-top: 1em;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-section .content {
+                max-width: 100%;
+            }
+
+            .hero-section .image img {
+                width: 200px;
+                margin-top: 2em;
+            }
+
+            header .nav-links {
+                flex-direction: row;
+                gap: 2em;
+            }
+        }
+
+        .hero-section h1 {
+            line-height: 1.8;
+            margin-bottom: 1em;
+
+            /* Adjust space below the heading */
+            .hero-section .image {
+                margin-left: -30px;
+                /* Moves the image to the left */
+                padding-right: 30px;
+                /* Space between the image and the content */
+            }
+
+            .typing-effect {
+                margin-top: 0.5em;
+                /* Adjust space above the typing effect */
+            }
+
+            .highlight-text {
+                color: #f39c12;
+                /* Highlight color (e.g., orange) */
+                font-weight: bold;
+
+                /* Optional: Make it bold */
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Keshanbisi</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li> <!-- Updated About link -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero-section">
+        <div class="content">
+            <h1>I'm <span class="highlight-text">Bisikeshan Bharasagar</span>, a passionate<br>
+                <span class="typing-effect" id="typing"></span>
+            </h1>
+            <p>I specialize in front-end technologies like HTML, CSS, and JavaScript. My goal is to continue learning
+                and contributing to innovative projects.</p>
+            <div class="buttons">
+                <a href="skills.html" class="btn">Explore My Skills</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="bisi.jpg" alt="Portrait of Bisikeshan Bharasagar">
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+        <a href="mailto:keshanbisi@gmail.com">Email Me</a>
+    </section>
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li> <!-- Footer About link -->
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p>&copy; 2025 Keshanbisi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const roles = ["Web Developer", "Graphic Designer", "Video Editor", "Typist"];
+        const typingElement = document.getElementById("typing");
+        let roleIndex = 0;
+        let charIndex = 0;
+
+        function typeEffect() {
+            if (charIndex < roles[roleIndex].length) {
+                typingElement.textContent += roles[roleIndex][charIndex];
+                charIndex++;
+                setTimeout(typeEffect, 100);
+            } else {
+                setTimeout(() => {
+                    typingElement.textContent = "";
+                    charIndex = 0;
+                    roleIndex = (roleIndex + 1) % roles.length;
+                    typeEffect();
+                }, 1500); // Pause before typing the next role
+            }
+        }
+
+        typeEffect();
+    </script>
+</body>
+
+</html>
